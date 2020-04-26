@@ -1,0 +1,15 @@
+.custom-chart {
+	float: left;
+	margin: 5px 0 0 5px;
+	padding: 5px;
+	width: calc(20% - 15px);
+	background-color: #696969;
+}
+
+rect {
+	fill: #696969;
+}
+
+text {
+	fill: #fff;
+}

@@ -1,12 +1,15 @@
 import React from 'react';
-import CustomChart from './components/CustomChart';
+
+import Header from './components/Header';
+import CustomChartsContainer from './containers/CustomChartsContainer';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <CustomChart />
+      <Header />
+      <CustomChartsContainer />
     </div>
   );
 }

@@ -1,22 +1,28 @@
 import React, { Component } from 'react';
+
 import Chart from 'react-google-charts';
+
+import '../styles/CustomChart.css';
 
 class CustomChart extends Component {
 	render() {
 		return (
-			<Chart
-        width={400}
-        height={300}
-        chartType="ColumnChart"
-        loader={<div>Loading Chart</div>}
-        data={
-          [
-            ["A", "B"],
-            ["X", 1],
-            ["Y", 2]
-          ]
-        }
-			/>
+      <div className="custom-chart">
+			  <Chart
+          frameBorder={0}
+          width={"100%"}
+          height={"100%"}
+          chartType="PieChart"
+          loader={<div>Loading Chart</div>}
+          data={this.props.data}
+          options={
+            {
+              legend: "top",
+              is3D: true
+            }
+          }
+			  />
+      </div>
 		);
 	}
 }
